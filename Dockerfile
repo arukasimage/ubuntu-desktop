@@ -1,7 +1,9 @@
 FROM ubuntu:trusty
 MAINTAINER Sean Payne <seantpayne+docker@gmail.com>
 
-ENV DEBIAN_FRONTEND noninteractive
+#ENV DEBIAN_FRONTEND noninteractive
+
+ENV VNCPASS password
 
 ADD startup.sh /startup.sh
 
